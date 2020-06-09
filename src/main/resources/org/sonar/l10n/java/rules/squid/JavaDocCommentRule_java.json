@@ -1,0 +1,13 @@
+{
+  "title": "类、类属性、类方法的注释必须使用 Javadoc 规范，使用\\/**内容*\\/格式，不得使用 xxx 方式",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "CRITICAL"
+}

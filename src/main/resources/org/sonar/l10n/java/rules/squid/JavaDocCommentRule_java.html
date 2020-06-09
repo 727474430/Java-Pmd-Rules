@@ -1,0 +1,37 @@
+<p>类、类属性、类方法的注释必须使用 Javadoc 规范，使用\/**内容*\/格式，不得使用 xxx 方式</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+// This is class // Noncompliant
+public class JavaDocCommentCheck {
+
+    // this is name // Noncompliant
+    private String name;
+
+    // this is method // Noncompliant
+    public void method() {
+
+    }
+
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+/**
+* This is class
+*/
+public class JavaDocCommentCheck {
+
+    /**
+    * This is name
+    */
+    private String name;
+
+    /**
+    * this is method
+    */
+    public void method() {
+
+    }
+
+}
+</pre>
