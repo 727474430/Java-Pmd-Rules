@@ -16,4 +16,6 @@ public class IssueConstant {
 
     public static final String METHOD_MUST_HAVE_AUTHOR_ISSUE_MSG = "所有的方法都必须添加创建者";
 
+    public static final String CLASS_MUST_HAVE_AUTHOR_ISSUE_MSG = "所有的类都必须添加创建者和创建日期";
+
 }
