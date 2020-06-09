@@ -1,0 +1,52 @@
+<p>所有的枚举类型字段必须要有注释，说明每个数据项的用途</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+enum EnumMustHaveCommentCheck {
+
+    OK(200), // Noncompliant
+    /* Error code */
+    ERROR(500), // Noncompliant
+    // Fail code
+    FAIL(400); // Noncompliant
+
+    private int code;
+
+    EnumMustHaveCommentCheck(int code) {
+        this.code = code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+enum EnumMustHaveCommentCheck {
+
+    /**
+    * Ok code
+    */
+    OK(200),
+    /**
+    * Error code
+    */
+    ERROR(500),
+    /**
+    * Fail code
+    */
+    FAIL(400);
+
+    private int code;
+
+    EnumMustHaveCommentCheck(int code) {
+        this.code = code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+}
+</pre>

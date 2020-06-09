@@ -18,4 +18,6 @@ public class IssueConstant {
 
     public static final String CLASS_MUST_HAVE_AUTHOR_ISSUE_MSG = "所有的类都必须添加创建者和创建日期";
 
+    public static final String ENUM_MUST_HAVE_AUTHOR_ISSUE_MSG = "所有的枚举类型字段必须要有注释，说明每个数据项的用途";
+
 }
