@@ -14,4 +14,6 @@ public class IssueConstant {
 
     public static final String BOOLEAN_PROPERTY_NAMING_ISSUE_MSG = "布尔类型变量属性命名，不能以 is 开头";
 
+    public static final String METHOD_MUST_HAVE_AUTHOR_ISSUE_MSG = "所有的方法都必须添加创建者";
+
 }

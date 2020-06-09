@@ -1,0 +1,13 @@
+{
+  "title": "所有的方法都必须添加创建者",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "CRITICAL"
+}

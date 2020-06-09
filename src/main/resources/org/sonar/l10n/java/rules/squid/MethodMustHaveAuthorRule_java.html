@@ -1,0 +1,54 @@
+<p>所有的方法都必须添加创建者</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+public class MethodMustHaveAuthorCheck {
+
+    public void method1() { // Noncompliant
+
+    }
+
+    /**
+     * @param name // Noncompliant
+     */
+    public void method2(String name) {
+
+    }
+
+    /**
+     * @param date  // Noncompliant
+     */
+    public void method3(Date date) {
+
+    }
+
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+public class MethodMustHaveAuthorCheck {
+
+    /**
+     * @author Raindrop
+     */
+    public void method1() {
+
+    }
+
+    /**
+     * @author Raindrop
+     * @param name
+     */
+    public void method2(String name) {
+
+    }
+
+    /**
+     * @author Raindrop
+     * @param date
+     */
+    public void method3() {
+
+    }
+
+}
+</pre>
