@@ -1,0 +1,31 @@
+<p>这个规则检测所有测试类，测试类命名必须是以被测试类名开始，以 Test 结尾</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+public class UserService { // Noncompliant
+    @Test
+    public void test() {
+        System.out.println(false);
+    }
+}
+public class UserServiceTest { // Noncompliant
+    @Test
+    public void test() {
+        System.out.println(true);
+    }
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+public class UserServiceTest {
+    @Test
+    public void test() {
+        System.out.println(false);
+    }
+}
+public class UserServiceTest { // create UserService class
+    @Test
+    public void test() {
+        System.out.println(true);
+    }
+}
+</pre>

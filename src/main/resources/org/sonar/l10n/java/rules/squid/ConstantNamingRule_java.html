@@ -1,0 +1,33 @@
+<p>这个规则检测所有常量，常量命名必须全大写，单词之间用下划线隔开</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+public class ConstantNamingRule {
+
+    public static final String name = "Tom"; // Noncompliant
+
+    public static final Integer max = 1; // Noncompliant
+
+    public static final boolean success = true; // Noncompliant
+
+    public static final long serialVersionUID = 1L;
+
+    public static final Logger logger = new Logger();
+
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+public class ConstantNamingRule {
+
+    public static final String NAME = "Tom";
+
+    public static final Integer MAX = 1;
+
+    public static final boolean SUCCESS = true;
+
+    public static final long serialVersionUID = 1L;
+
+    public static final Logger logger = new Logger();
+
+}
+</pre>

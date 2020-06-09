@@ -1,0 +1,9 @@
+<p>这个规则检测所有异常类，异常类命名必须使用 Exception 结尾</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+  public class ExceptionCustom extends Exception { } // Noncompliant
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+  public class CustomException extends Exception { }
+</pre>

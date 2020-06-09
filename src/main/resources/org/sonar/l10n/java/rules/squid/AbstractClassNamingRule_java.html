@@ -1,0 +1,13 @@
+<p>这个规则检测所有抽象类，抽象类命名必须使用 Abstract 或 Base 开头</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+  abstract class AnimalAbstract { } // Noncompliant
+
+  abstract class AnimalBase { } // Noncompliant
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+  abstract class AbstractAnimal { }
+
+  abstract class BaseAnimal { }
+</pre>

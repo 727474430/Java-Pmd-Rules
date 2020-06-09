@@ -1,0 +1,13 @@
+{
+  "title": "类名必须遵循驼峰命名规则，领域模型除外",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "Major"
+}

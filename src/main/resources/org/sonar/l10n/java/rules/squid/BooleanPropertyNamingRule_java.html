@@ -1,0 +1,15 @@
+<p>这个规则检测所有布尔类型变量属性，布尔类型变量属性命名，不能以 is 开头</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+public class BooleanPropertyNamingCheck {
+    boolean isOk; // Noncompliant
+    boolean isSuccess; // Noncompliant
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+public class BooleanPropertyNamingCheck {
+    boolean ok;
+    boolean success;
+}
+</pre>
